@@ -24,7 +24,7 @@ class Scraper
       elsif links["href"].include?("linkedin")
         student_hash[:linkedin] = links["href"]
       elsif links["href"].include?("github")
-        
+        student_hash[:github] = links["href"]
       end
     end
   end
