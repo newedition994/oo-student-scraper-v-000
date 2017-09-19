@@ -30,6 +30,7 @@ class Scraper
       end
     end
     student_hash[:profile_quote] = profile_page.css(".profile_quote").text
+    
   end
 
 end
