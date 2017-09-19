@@ -13,3 +13,5 @@ class Scraper
   end
 
 end
+
+scrape_index_page
