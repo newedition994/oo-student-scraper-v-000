@@ -22,6 +22,8 @@ class Scraper
       if links["href"].include?("twitter")
         student_hash[:twitter] = links["href"]
       elsif links["href"].include?("linkedin")
+        student_hash[:linkedin] = links["href"]
+      elsif links["href"].include?("github")
         
       end
     end
