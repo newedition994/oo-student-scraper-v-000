@@ -8,7 +8,7 @@ class Scraper
     #binding.pry
     index_page.css(".student-card").collect.with_index do |cards, index|
       scraped_students = {}
-      scraped_students[:name] = index_page.css(".student-name")[index]
+      scraped_students[:name] = index_page.css(".student-name")[index].text
     end
   end
 
