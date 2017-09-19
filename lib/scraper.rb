@@ -29,6 +29,7 @@ class Scraper
         student_hash[:blog] = links["href"]
       end
     end
+    student_hash[:profile_quote] = profile_page.css(".profile_quote").text
   end
 
 end
