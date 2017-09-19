@@ -9,6 +9,8 @@ class Scraper
     index_page.css(".student-card").collect.with_index do |cards, index|
       scraped_students = {}
       scraped_students[:name] = index_page.css(".student-name")[index].text
+      scraped_students[:location] = index_page.css(".student-location")[index].text
+      scraped_students[:profile_url] = index_page.css(".student-card a")[index]["href"]
     end
   end
 
