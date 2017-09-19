@@ -14,4 +14,4 @@ class Scraper
 
 end
 
-
+scrape_index_page
