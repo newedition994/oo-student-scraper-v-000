@@ -20,7 +20,7 @@ class Scraper
     profile_page = Nokogiri::HTML(open(profile_url))
     profile_page.css(".social-icon-container a").each_with_index do |links, index|
       if links["href"].include?("twitter")
-        student_hash
+        student_hash[:twitter] = links["href"]
       end
     end
   end
