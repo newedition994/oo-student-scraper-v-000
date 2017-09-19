@@ -11,6 +11,7 @@ class Scraper
       scraped_students[:name] = index_page.css(".student-name")[index].text
       scraped_students[:location] = index_page.css(".student-location")[index].text
       scraped_students[:profile_url] = index_page.css(".student-card a")[index]["href"]
+      scraped_students
     end
   end
 
